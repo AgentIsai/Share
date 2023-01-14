@@ -4,10 +4,11 @@ use MediaWiki\MediaWikiServices;
 
 class ShareHooks {
 	public static function onSidebarBeforeOutput( Skin $skin, &$sidebar ) {
-		global $wgExtensionAssetsPath, $wgShareFacebook, $wgShareTwitter,
-			$wgShareLinkedIn, $wgShareTumblr, $wgShareReddit,
-			$wgShareEmail, $wgShareTelegram $wgShareUseBasicButtons,
-			$wgShareUsePlainLinks;
+		global $wgExtensionAssetsPath, $wgShareBlogger, $wgShareEmail,
+			$wgShareFacebook, $wgShareHackerNews, $wgShareLinkedIn,
+			$wgShareReddit, $wgShareTelegram, $wgShareTumblr,
+			$wgShareTwitter, $wgShareVK, $wgShareWeibo,
+			$wgShareWhatsApp, $wgShareUseBasicButtons, $wgShareUsePlainLinks;
 
 		// Get title
 		$query = $skin->getRequest()->getQueryValues();
@@ -59,6 +60,13 @@ class ShareHooks {
 							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
 						];
 					}
+
+					if ( $wgShareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
+						];
+					}
+
 				}
 
 				// 'Sidebar images' mode - Doesn't load the button from each platform's social plugin library but instead displays images saying "Share"
@@ -168,6 +176,33 @@ class ShareHooks {
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-tumblr' ),
 							'id' => 'n-tumblrshare',
+						];
+					}
+
+					if ( $wgShareVK ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-vk' ),
+							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-vk' ),
+							'id' => 'n-vkshare',
+						];
+					}
+
+					if ( $wgShareWeibo ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-weibo' ),
+							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-weibo' ),
+							'id' => 'n-weiboshare',
+						];
+					}
+
+					if ( $wgShareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-whatsapp' ),
+							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-whatsapp' ),
+							'id' => 'n-whatsappshare',
 						];
 					}
 				}
