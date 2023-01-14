@@ -91,7 +91,7 @@ class ShareHooks {
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-reddit' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
@@ -118,9 +118,9 @@ class ShareHooks {
 				if ( !$wgShareUseBasicButtons && $wgShareUsePlainLinks ) {
 					if ( $wgShareFacebook ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-facebook' ),
+							'text' => wfMessage( 'share-facebook' )->plain(),
 							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-facebook' ),
+							'title' => wfMessage( 'share-facebook' )->plain(),
 							'id' => 'n-facebookshare',
 						];
 					}
@@ -163,9 +163,9 @@ class ShareHooks {
 
 					if ( $wgShareTelegram ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-telegram' ),
+							'text' => wfMessage( 'share-telegram' )->plain(),
 							'href' => 'https://t.me/share/url?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-telegram' ),
+							'title' => wfMessage( 'share-telegram' )->plain(),
 							'id' => 'n-telegramshare',
 						];
 					}
@@ -181,27 +181,27 @@ class ShareHooks {
 
 					if ( $wgShareVK ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-vk' ),
+							'text' => wfMessage( 'share-vk' )->plain(),
 							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-vk' ),
+							'title' => wfMessage( 'share-vk' )->plain(),
 							'id' => 'n-vkshare',
 						];
 					}
 
 					if ( $wgShareWeibo ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-weibo' ),
+							'text' => wfMessage( 'share-weibo' )->plain(),
 							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-weibo' ),
+							'title' => wfMessage( 'share-weibo' )->plain(),
 							'id' => 'n-weiboshare',
 						];
 					}
 
 					if ( $wgShareWhatsApp ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-whatsapp' ),
+							'text' => wfMessage( 'share-whatsapp' )->plain(),
 							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-whatsapp' ),
+							'title' => wfMessage( 'share-whatsapp' )->plain(),
 							'id' => 'n-whatsappshare',
 						];
 					}
