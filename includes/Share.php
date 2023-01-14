@@ -6,7 +6,7 @@ class ShareHooks {
 	public static function onSidebarBeforeOutput( Skin $skin, &$sidebar ) {
 		global $wgExtensionAssetsPath, $wgShareFacebook, $wgShareTwitter,
 			$wgShareLinkedIn, $wgShareTumblr, $wgShareReddit,
-			$wgShareEmail, $wgShareUseBasicButtons,
+			$wgShareEmail, $wgShareTelegram $wgShareUseBasicButtons,
 			$wgShareUsePlainLinks;
 
 		// Get title
@@ -48,6 +48,12 @@ class ShareHooks {
 						];
 					}
 
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'html' => '<script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-share-url="' . urlencode( $currenturl ) . '" data-size="large"></script>',
+						];
+					}
+
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
@@ -77,7 +83,13 @@ class ShareHooks {
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-redit' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' ).'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.$skin->msg( 'share-telegram' ).'" width="90" height="30"></a>',
 						];
 					}
 
@@ -138,6 +150,15 @@ class ShareHooks {
 							'href' => 'https://www.reddit.com/submit?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-reddit' ),
 							'id' => 'n-redditshare',
+						];
+					}
+
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-telegram' ),
+							'href' => 'https://t.me/share/url?url=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-telegram' ),
+							'id' => 'n-telegramshare',
 						];
 					}
 
