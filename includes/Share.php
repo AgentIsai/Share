@@ -97,7 +97,7 @@ class ShareHooks {
 
 					if ( $wgShareTelegram ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.$skin->msg( 'share-telegram' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.wfMessage( 'share-telegram' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
