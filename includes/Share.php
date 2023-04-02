@@ -4,10 +4,11 @@ use MediaWiki\MediaWikiServices;
 
 class ShareHooks {
 	public static function onSidebarBeforeOutput( Skin $skin, &$sidebar ) {
-		global $wgExtensionAssetsPath, $wgShareFacebook, $wgShareTwitter,
-			$wgShareLinkedIn, $wgShareTumblr, $wgShareReddit,
-			$wgShareEmail, $wgShareUseBasicButtons,
-			$wgShareUsePlainLinks;
+		global $wgExtensionAssetsPath, $wgShareBlogger, $wgShareEmail,
+			$wgShareFacebook, $wgShareHackerNews, $wgShareLinkedIn,
+			$wgShareReddit, $wgShareTelegram, $wgShareTumblr,
+			$wgShareTwitter, $wgShareVK, $wgShareWeibo,
+			$wgShareWhatsApp, $wgShareUseBasicButtons, $wgShareUsePlainLinks;
 
 		// Get title
 		$query = $skin->getRequest()->getQueryValues();
@@ -48,11 +49,24 @@ class ShareHooks {
 						];
 					}
 
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'html' => '<script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-share-url="' . urlencode( $currenturl ) . '" data-size="large"></script>',
+						];
+					}
+
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
 						];
 					}
+
+					if ( $wgShareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
+						];
+					}
+
 				}
 
 				// 'Sidebar images' mode - Doesn't load the button from each platform's social plugin library but instead displays images saying "Share"
@@ -78,6 +92,12 @@ class ShareHooks {
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-reddit' )->plain().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.wfMessage( 'share-telegram' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
@@ -141,12 +161,48 @@ class ShareHooks {
 						];
 					}
 
+					if ( $wgShareTelegram ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-telegram' )->plain(),
+							'href' => 'https://t.me/share/url?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-telegram' )->plain(),
+							'id' => 'n-telegramshare',
+						];
+					}
+
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
 							'text' => wfMessage( 'share-tumblr' )->plain(),
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
 							'title' => wfMessage( 'share-tumblr' )->plain(),
 							'id' => 'n-tumblrshare',
+						];
+					}
+
+					if ( $wgShareVK ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-vk' )->plain(),
+							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-vk' )->plain(),
+							'id' => 'n-vkshare',
+						];
+					}
+
+					if ( $wgShareWeibo ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-weibo' )->plain(),
+							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-weibo' )->plain(),
+							'id' => 'n-weiboshare',
+						];
+					}
+
+					if ( $wgShareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-whatsapp' )->plain(),
+							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-whatsapp' )->plain(),
+							'id' => 'n-whatsappshare',
 						];
 					}
 				}
