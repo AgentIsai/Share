@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Verdy p"
 		]
 	},
@@ -13,14 +14,23 @@
 	"share-facebook-desc": "Autorise l’ajout d’un lien dans la barre latérale pour partager des articles via Facebook.",
 	"share-linkedin": "Partager sur LinkedIn",
 	"share-linkedin-desc": "Autorise l’ajout d’un lien dans la barre latérale pour partager des articles via LinkedIn.",
+	"share-pinterest": "Partager sur Pinterest",
+	"share-pinterest-desc": "Permet d’ajouter un lien pour partager les articles via Pinterest dans la barre latérale",
 	"share-reddit": "Partager sur Reddit",
 	"share-reddit-desc": "Autorise l’ajout d’un lien dans la barre latérale pour partager des articles via Reddit.",
-	"share-sidebar-basicbuttons": "Utiliser le mode « Boutons de base » ?",
-	"share-sidebar-plainlinks": "N’utiliser que des liens simples dans la barre latérale ?",
+	"share-telegram": "Partager sur Telegram",
+	"share-telegram-desc": "Permet d’ajouter un lien pour partager les articles via Telegram dans la barre latérale",
 	"share-tumblr": "Partager sur Tumblr",
 	"share-tumblr-desc": "Autorise l’ajout d’un lien dans la barre latérale pour partager des articles via Tumblr.",
 	"share-twitter": "Partager sur Twitter",
 	"share-twitter-desc": "Autorise l’ajout d’un lien dans la barre latérale pour partager des articles via Twitter.",
+	"share-vk": "Partager sur VK",
+	"share-vk-desc": "Permet d’ajouter un lien pour partager les articles via VK dans la barre latérale",
+	"share-weibo": "Partager sur Weibo",
+	"share-weibo-desc": "Permet d’ajouter un lien pour partager les articles via Weibo dans la barre latérale",
+	"share-whatsapp": "Partager sur WhatsApp",
+	"share-whatsapp-desc": "Permet d’ajouter un lien pour partager les articles via WhatsApp dans la barre latérale",
+	"share-sidebar-basicbuttons": "Utiliser le mode boutons ?",
 	"share-preftoggle": "Désactiver l’affichage des liens de partage dans la barre latérale ?",
 	"right-viewsharelinks": "Afficher la section de partage de liens dans la barre latérale"
 }

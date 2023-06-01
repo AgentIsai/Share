@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"share": "Udostępnij",
+	"share-desc": "Dodaje z boku stron pasek umożliwiający użytkownikom łatwe dzielenie się artykułami w mediach społecznościowych",
+	"share-header": "Udostępnij",
+	"share-email": "Podziel się przez e-mail",
+	"share-email-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły przez e-mail",
+	"share-facebook": "Udostępnij na Facebooku",
+	"share-facebook-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Facebooku",
+	"share-linkedin": "Udostępnij na LinkedIn",
+	"share-linkedin-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na LinkedIn",
+	"share-pinterest": "Udostępnij na Pintereście",
+	"share-pinterest-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Pintereście",
+	"share-reddit": "Udostępnij na Reddicie",
+	"share-reddit-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Reddicie",
+	"share-telegram": "Udostępnij na Telegramie",
+	"share-telegram-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Telegramie",
+	"share-tumblr": "Udostępnij na Tumblrze",
+	"share-tumblr-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Tumblrze",
+	"share-twitter": "Udostępnij na Twitterze",
+	"share-twitter-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Twitterze",
+	"share-vk": "Udostępnij na VK",
+	"share-vk-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na VK",
+	"share-weibo": "Udostępnij na Weibo",
+	"share-weibo-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na Weibo",
+	"share-whatsapp": "Udostępnij na WhatsAppie",
+	"share-whatsapp-desc": "Umożliwia dodanie do paska narzędzi linku udostępniającego artykuły na WhatsAppie",
+	"share-sidebar-basicbuttons": "Włączyć tryb przycisków?",
+	"share-preftoggle": "Wyłączyć wyświetlanie linków udostępniania?",
+	"right-viewsharelinks": "Wyświetlanie paska udostępniania"
+}

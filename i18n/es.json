@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Agent"
+			"Agent",
+			"Fitoschido"
 		]
 	},
 	"share": "Compartir",
@@ -13,14 +14,18 @@
 	"share-facebook-desc": "Permite que se agregue un enlace para compartir artículos a través de Facebook en la barra lateral",
 	"share-linkedin": "Compartir en LinkedIn",
 	"share-linkedin-desc": "Permite que se agregue un enlace para compartir artículos a través de LinkedIn en la barra lateral",
+	"share-pinterest": "Compartir en Pinterest",
 	"share-reddit": "Compartir en Reddit",
 	"share-reddit-desc": "Permite que se agregue a la barra lateral un enlace para compartir artículos a través de Reddit",
-	"share-sidebar-basicbuttons": "¿Usar el modo de botones básicos?",
-	"share-sidebar-plainlinks": "¿Usar solo enlaces simples en la barra lateral?",
+	"share-telegram": "Compartir en Telegram",
 	"share-tumblr": "Compartir en Tumblr",
 	"share-tumblr-desc": "Permite que se agregue un enlace para compartir artículos a través de Tumblr a la barra lateral",
 	"share-twitter": "Compartir en Twitter",
 	"share-twitter-desc": "Permite que se agregue un enlace para compartir artículos a través de Twitter en la barra lateral",
+	"share-vk": "Compartir en VK",
+	"share-weibo": "Compartir en Weibo",
+	"share-whatsapp": "Compartir en WhatsApp",
+	"share-sidebar-basicbuttons": "¿Usar el modo de botones básicos?",
 	"share-preftoggle": "¿Deshabilitar la visualización de enlaces para compartir en la barra lateral?",
 	"right-viewsharelinks": "Ver el portlet de compartir de la barra lateral"
 }
