@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma"
+		]
+	},
+	"share-pinterest": "شارك على Pinterest",
+	"share-pinterest-desc": "اسمح لرابط لمشاركة المقالات عبر Pinterest لإضافته إلى الشريط الجانبي",
+	"share-telegram": "شارك في Telegram",
+	"share-telegram-desc": "السماح لرابط لمشاركة المقالات عبر Telegram لإضافته إلى الشريط الجانبي",
+	"share-vk": "شارك في VK",
+	"share-vk-desc": "اسمح بارتباط لمشاركة المقالات عبر VK لإضافته إلى الشريط الجانبي",
+	"share-weibo": "شارك على Weibo",
+	"share-weibo-desc": "اسمح بإضافة رابط لمشاركة المقالات عبر WhatsApp إلى الشريط الجانبي",
+	"share-whatsapp": "شارك على WhatsApp",
+	"share-whatsapp-desc": "اسمح بإضافة رابط لمشاركة المقالات عبر WhatsApp إلى الشريط الجانبي",
+	"share-sidebar-basicbuttons": "استخدم وضع الأزرار؟"
+}
