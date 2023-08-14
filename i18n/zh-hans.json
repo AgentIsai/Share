@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"CrownedWharf566",
 			"Lakejason0"
 		]
 	},
@@ -19,7 +20,7 @@
 	"share-tumblr-desc": "允许通过Tumblr分享条目的链接添加到侧边栏",
 	"share-twitter": "分享到Twitter",
 	"share-twitter-desc": "允许通过Twitter分享条目的链接添加到侧边栏",
-	"share-sidebar-basicbuttons": "使用基本按钮模式？",
+	"share-sidebar-basicbuttons": "使用按钮模式？",
 	"share-preftoggle": "禁用在侧边栏中显示分享链接？",
 	"right-viewsharelinks": "查看侧边栏共享portlet"
 }
