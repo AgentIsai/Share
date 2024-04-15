@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anterdc99",
 			"CrownedWharf566",
 			"Lakejason0",
 			"LittlePaw365"
@@ -16,16 +17,21 @@
 	"share-linkedin": "分享到领英",
 	"share-linkedin-desc": "允许通过LinkedIn分享条目的链接添加到侧边栏",
 	"share-pinterest": "分享到Pinterest",
+	"share-pinterest-desc": "允许通过Pinterest分享条目的链接添加到侧边栏",
 	"share-reddit": "分享到Reddit",
 	"share-reddit-desc": "允许通过Reddit分享条目的链接添加到侧边栏",
 	"share-telegram": "分享到Telegram",
+	"share-telegram-desc": "允许通过Telegram分享条目的链接添加到侧边栏",
 	"share-tumblr": "分享到Tumblr",
 	"share-tumblr-desc": "允许通过Tumblr分享条目的链接添加到侧边栏",
 	"share-twitter": "分享到Twitter",
 	"share-twitter-desc": "允许通过Twitter分享条目的链接添加到侧边栏",
 	"share-vk": "分享到VK",
+	"share-vk-desc": "允许通过VK分享条目的链接添加到侧边栏",
 	"share-weibo": "分享到新浪微博",
+	"share-weibo-desc": "允许通过新浪微博分享条目的链接添加到侧边栏",
 	"share-whatsapp": "分享到WhatsApp",
+	"share-whatsapp-desc": "允许通过WhatsApp分享条目的链接添加到侧边栏",
 	"share-sidebar-basicbuttons": "使用按钮模式？",
 	"share-preftoggle": "禁用在侧边栏中显示分享链接？",
 	"right-viewsharelinks": "查看侧边栏共享portlet"
