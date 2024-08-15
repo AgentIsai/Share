@@ -1,19 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Romaine"
 		]
 	},
 	"share": "Delen",
+	"share-desc": "Voegt aan de zijbalk een module toe waarmee gebruikers eenvoudig wiki-artikelen op sociale-mediaplatforms kunnen delen",
+	"share-header": "Dit delen",
 	"share-email": "Deel via e-mail",
+	"share-email-desc": "Maakt het mogelijk een koppeling om artikelen via e-mail te delen aan de zijbalk toe te voegen",
 	"share-facebook": "Deel op Facebook",
+	"share-facebook-desc": "Maakt het mogelijk een koppeling om artikelen via Facebook te delen aan de zijbalk toe te voegen",
 	"share-linkedin": "Deel op LinkedIn",
+	"share-linkedin-desc": "Maakt het mogelijk een koppeling om artikelen via LinkedIn te delen aan de zijbalk toe te voegen",
 	"share-pinterest": "Deel op Pinterest",
+	"share-pinterest-desc": "Maakt het mogelijk een koppeling om artikelen via Pinterest te delen aan de zijbalk toe te voegen",
 	"share-reddit": "Deel op Reddit",
+	"share-reddit-desc": "Maakt het mogelijk een koppeling om artikelen via Reddit te delen aan de zijbalk toe te voegen",
 	"share-telegram": "Deel op Telegram",
+	"share-telegram-desc": "Maakt het mogelijk een koppeling om artikelen via Telegram te delen aan de zijbalk toe te voegen",
 	"share-tumblr": "Deel op Tumblr",
+	"share-tumblr-desc": "Maakt het mogelijk een koppeling om artikelen via Tumblr te delen aan de zijbalk toe te voegen",
 	"share-twitter": "Deel op Twitter",
+	"share-twitter-desc": "Maakt het mogelijk een koppeling om artikelen via Twitter te delen aan de zijbalk toe te voegen",
 	"share-vk": "Deel op VK",
+	"share-vk-desc": "Maakt het mogelijk een koppeling om artikelen via VK te delen aan de zijbalk toe te voegen",
 	"share-weibo": "Deel op Weibo",
-	"share-whatsapp": "Deel op WhatsApp"
+	"share-weibo-desc": "Maakt het mogelijk een koppeling om artikelen via Weibo te delen aan de zijbalk toe te voegen",
+	"share-whatsapp": "Deel op WhatsApp",
+	"share-whatsapp-desc": "Maakt het mogelijk een koppeling om artikelen via WhatsApp te delen aan de zijbalk toe te voegen",
+	"share-sidebar-basicbuttons": "Knoppenmodus gebruiken?",
+	"share-preftoggle": "Weergave van koppelingen voor delen in de zijbalk uitschakelen?",
+	"right-viewsharelinks": "Module voor delen in zijbalk weergeven"
 }
