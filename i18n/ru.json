@@ -1,12 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Deltaspace"
+			"Deltaspace",
+			"Yurina Tatiana"
 		]
 	},
 	"share": "Поделиться",
+	"share-header": "Поделиться этим",
 	"share-email": "Поделиться по электронной почте",
 	"share-linkedin": "Поделиться в LinkedIn",
 	"share-linkedin-desc": "Разрешить добавление ссылки для обмена статьями через LinkedIn на боковую панель",
-	"share-reddit": "Поделиться на Реддите"
+	"share-reddit": "Поделиться на Реддите",
+	"share-telegram": "Поделиться в Telegram",
+	"share-whatsapp": "Поделиться в WhatsApp"
 }
